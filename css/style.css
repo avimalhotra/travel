@@ -82,7 +82,7 @@ body{
 .flex{ display: flex;}
 .align-center{ align-items: center;}
 .justify-space-bet{ justify-content: space-between;}
-
+.img-resp{ max-width: 100%; height: auto;}
 /* layout */
 
 
@@ -120,6 +120,7 @@ nav li a.active{ border-bottom: 3px solid #fd0;}
 .wrap-2 input[type="number"]{ width: 100px;}
 .wrap-2 button{ margin-top: 20px; height: 40px; width: 189px; background:#4e4e4e; border: none; color: #fff; border-radius: 5px;}
 .wrap-2 h2{ margin-bottom: 60px;}
+h2{font-size: 37px; }
 
 
 .wrap-3{ 
@@ -128,18 +129,48 @@ nav li a.active{ border-bottom: 3px solid #fd0;}
 .about{ padding: 80px;}
 .about h2{ font-size: 37px; margin-bottom: 50px;}
 .about p{  margin: 25px 0;}
-.about li{ position: relative; padding-left: 40px; margin: 25px 0;}
-.about li span{ display: inline-block;
+.list li{ position: relative; padding-left: 40px; margin: 25px 0;}
+.list li span{ display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; position: absolute; left: 0; }
-.about li span::before{ content: '\f058'; color: #00a4ff; font-size: 30px; }
+.list li span::before{ content: '\f058'; color: #00a4ff; font-size: 30px; }
+
+
+
+.wrap-4{ padding: 69px 0; }
+.services{ padding: 20px 10rem 20px 0;}
+.services h3{ font-weight: 500; font-size: 22px;}
+.services span.fa{ font-size: 55px; margin-right: 70px; color: #00a4ff;}
+
+
+
+.wrap-5{ padding: 130px 0 102px; background: url(../img/bg4.webp) no-repeat #00a4ff;}
+.budget{ background: #fff; padding: 35px 0 25px; text-align: center;  color: #373737; border-radius: 12px; margin-top: 50px;}
+.budget span.fa{font-size: 67px;}
+.price{ font-size: 30px; background: #f0d839; line-height: 64px; margin: 20px -7px;}
+.budget .list{ margin: 0 90px;}
 
 
 
 
+.wrap-6{ padding: 6rem 0;}
+.tour-status{padding: 0 35px 0 50px;}
+.tab{ margin: 50px 0;}
+.tab ul{ display: flex; border: 2px solid #00a4ff;}
+.tab ul li{ flex: 1 0 auto; position: relative;}
+.tab ul li:nth-child(1):after{content: ''; position: absolute; width: 23px; left: 100%; top: 0; bottom: 0; background: #00a4ff; z-index: 1; clip-path: polygon(0 0, 100% 50%, 0 100%); transform: translateX(-1px); }
+.tab ul li:nth-child(2):after{content: ''; position: absolute; width: 23px; left: 100%; top: 0; bottom: 0; background: #e4e4e4; z-index: 1; clip-path: polygon(0 0, 100% 50%, 0 100%); transform: translateX(-1px); }
+
+.tab ul li a{ font-size: 22px; display: block; text-align: center; line-height: 94px;}
+.tab ul li a span.fa{ font-size: 44px; vertical-align: middle;}
+.tab ul li:nth-child(1) a{ background: #00a4ff;color: #fff;}
+.tab ul li:nth-child(2) a{  background: #e4e4e4; color: #373737;}
+.tab ul li:nth-child(3) a{ color: #373737}
+.tour-status p{ margin: 2rem 0;}
+.tour-status a.link{ background: #fd0; color: #222; line-height: 58px; width: 216px; text-align: center; font-weight: 500;}
 
 
 
@@ -156,15 +187,23 @@ nav li a.active{ border-bottom: 3px solid #fd0;}
     .col-t-6{ flex: 1 0 50%; max-width: 50%;}
     .col-t-12{ flex: 1 0 100%; max-width: 100%;}
     .wrap-3{ background: url(../img/bg2.webp) no-repeat right center/cover;}
+    .services{ padding: 1rem 2rem;}
+    .budget .list{ margin: 0 20px;}
+    .tour-status{padding: 0 15px 0 20px;}
 }
 @media screen and (max-width:767px){ 
     .banner{ padding:50px;}
     .social li{ margin:  0 5px;}
+    .services{ padding: 1rem;}
+    .col-m-12{ flex: 1 0 100%; max-width: 100%;}
+    
 }
 @media screen and (max-width:460px){
     .hidden-m{ display: none; }
-    .col-m-4{ flex: 1 0 33.33%; max-width: 33.33%;}
-    .col-m-8{ flex: 1 0 66.66%; max-width: 66.66%;}
-    .col-m-12{ flex: 1 0 100%; max-width: 100%;}
+    .col-p-4{ flex: 1 0 33.33%; max-width: 33.33%;}
+    .col-p-8{ flex: 1 0 66.66%; max-width: 66.66%;}
+    .col-p-12{ flex: 1 0 100%; max-width: 100%;}
     .banner p:nth-child(1){ font-size: 50px;}
+    .tour-status{ padding: 0;}
+    .tab ul li a,.tab ul li a span.fa{ font-size: 16px;}
 }
