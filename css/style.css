@@ -86,7 +86,7 @@ body{
 /* layout */
 
 
-.wrap-1{ background: url(../img/bg1.webp) no-repeat center top/cover;}
+.wrap-1{ background: url(../img/bg1.webp) no-repeat center top/cover #0a2b55;}
 .wrap-1 header{ background: rgba(0, 0, 0, .4); }
 .wrap-1 a{ color: #fff;}
 .topnav{ border-bottom: 3px solid rgba(255,255,255,.4); padding: 10px 0; line-height: 47px; font-size: 14px;}
@@ -159,14 +159,14 @@ h2{font-size: 37px; }
 .wrap-6{ padding: 6rem 0;}
 .tour-status{padding: 0 35px 0 50px;}
 .tab{ margin: 50px 0;}
-.tab ul{ display: flex; border: 2px solid #00a4ff;}
+.tab ul{ display: flex; border: 2px solid #0675b0;}
 .tab ul li{ flex: 1 0 auto; position: relative;}
-.tab ul li:nth-child(1):after{content: ''; position: absolute; width: 23px; left: 100%; top: 0; bottom: 0; background: #00a4ff; z-index: 1; clip-path: polygon(0 0, 100% 50%, 0 100%); transform: translateX(-1px); }
+.tab ul li:nth-child(1):after{content: ''; position: absolute; width: 23px; left: 100%; top: 0; bottom: 0; background: #0675b0; z-index: 1; clip-path: polygon(0 0, 100% 50%, 0 100%); transform: translateX(-1px); }
 .tab ul li:nth-child(2):after{content: ''; position: absolute; width: 23px; left: 100%; top: 0; bottom: 0; background: #e4e4e4; z-index: 1; clip-path: polygon(0 0, 100% 50%, 0 100%); transform: translateX(-1px); }
 
 .tab ul li a{ font-size: 22px; display: block; text-align: center; line-height: 94px;}
 .tab ul li a span.fa{ font-size: 44px; vertical-align: middle;}
-.tab ul li:nth-child(1) a{ background: #00a4ff;color: #fff;}
+.tab ul li:nth-child(1) a{ background: #0675b0;color: #fff;}
 .tab ul li:nth-child(2) a{  background: #e4e4e4; color: #373737;}
 .tab ul li:nth-child(3) a{ color: #373737}
 .tour-status p{ margin: 2rem 0;}
